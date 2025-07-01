@@ -1,7 +1,7 @@
-import { Router } from "express";
+import express from "express";
 import { createOrUpdateReferral } from "../controller/referral.controller.js";
-
-const router = Router();
+import { updateReferralInProducts } from "../controller/product.controller.js";
+const router = express.Router();
 
 router.post("/create-or-update", createOrUpdateReferral);
 

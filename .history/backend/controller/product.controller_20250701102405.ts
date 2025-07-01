@@ -73,7 +73,7 @@ export const updateReferralInProducts = async (req: Request, res: Response) => {
 
   try {
     await db.products.updateMany({
-      where: { referralBy: null }, //optional
+      where: { referralBy: null }, //optionl
       data: {
         referralBy,
         referralPercentage,

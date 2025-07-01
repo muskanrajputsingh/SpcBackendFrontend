@@ -1,0 +1,8 @@
+import express from "express";
+import { createOrUpdateReferral } from "../controller/referral.controller.js";
+
+const router = express.Router();
+
+router.post("/create-or-update", cr);
+
+export default router;

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import db from "../client/connect.js";
-import { getReferralByUser, createReferral, updateReferralUsedBy } from "../model/referral.model.js";
+import { getReferralByUser, createReferral, updateReferralUsedBy } from "../models/referral.model.js";
 
 export const createOrUpdateReferral = async (req: Request, res: Response) => {
   const { associateId, percent } = req.body;
